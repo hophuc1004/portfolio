@@ -21,20 +21,14 @@ export default function SkillsPage() {
       />
 
       {/* Honest Positioning & Level Transparency */}
-      <div className="rounded-xl border border-cyan-200 bg-cyan-50/70 p-5 sm:p-6 mb-8 sm:mb-10 flex items-start gap-4">
+      <div className="rounded-xl border border-cyan-200 bg-cyan-50/70 p-4 sm:p-5 mb-8 sm:mb-10 flex items-start gap-3.5">
         <div className="p-2 rounded-lg bg-cyan-100 text-cyan-700 shrink-0">
           <Sparkles className="h-5 w-5" />
         </div>
-        <div className="text-[15px] sm:text-[16px] text-slate-700 leading-relaxed space-y-1">
-          <p className="font-semibold text-slate-900">
-            Honest Skill Level Distinction:
-          </p>
-          <p>
-            My strongest, commercially proven background is in <strong>full-stack web development</strong> (JavaScript, Node.js, React, PostgreSQL, REST APIs, Redis, gRPC).
-            I do not claim to be a senior architect or veteran Dynamics AX expert.
-            My work with Dynamics AX, Power BI, and Power Platform represents an active, deliberate career transition—applying proven engineering practices to business systems and enterprise ERP integrations.
-          </p>
-        </div>
+        <p className="text-[15px] sm:text-[16px] text-slate-700 leading-relaxed">
+          <strong className="text-slate-900 font-semibold">Skill Level Distinction:</strong>{" "}
+          Full-stack web development is my primary commercial background (4+ years). Dynamics AX, Power Platform, and business automation represent an active career transition supported by current part-time integration work.
+        </p>
       </div>
 
       {/* Skill Categories */}

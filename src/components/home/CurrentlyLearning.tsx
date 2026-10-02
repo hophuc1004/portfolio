@@ -2,37 +2,47 @@ import React from "react";
 import Link from "next/link";
 import {
   Layers,
-  Cpu,
-  Database,
   BarChart3,
   PlugZap,
-  Sparkles,
   ArrowRight,
+  Network,
 } from "lucide-react";
-import { skillCategories } from "@/data/skills";
 
-function getSkillIcon(name: string) {
-  if (name.includes("Apps")) return <Layers className="h-5 w-5 text-cyan-600" />;
-  if (name.includes("Automate")) return <Cpu className="h-5 w-5 text-emerald-600" />;
-  if (name.includes("BI")) return <BarChart3 className="h-5 w-5 text-amber-600" />;
-  if (name.includes("Dataverse")) return <Database className="h-5 w-5 text-indigo-600" />;
-  if (name.includes("AX") || name.includes("D365")) return <PlugZap className="h-5 w-5 text-blue-600" />;
-  if (name.includes("Pages")) return <Layers className="h-5 w-5 text-cyan-600" />;
-  return <Sparkles className="h-5 w-5 text-purple-600" />;
+interface FocusArea {
+  title: string;
+  description: string;
+  tag: string;
+  icon: React.ReactNode;
 }
 
-function getSkillTag(name: string) {
-  if (name.includes("AX") || name.includes("BI")) return "Part-time Work";
-  if (name.includes("AI")) return "Exploring";
-  return "Active";
-}
+const focusAreas: FocusArea[] = [
+  {
+    title: "Dynamics AX / D365",
+    description: "Supporting ERP workflows, business data flows, and external system integrations.",
+    tag: "Part-time Work",
+    icon: <PlugZap className="h-5 w-5 text-blue-600" />,
+  },
+  {
+    title: "Power Platform",
+    description: "Developing Canvas & Model-Driven apps, automated cloud flows, and Dataverse tables.",
+    tag: "Active",
+    icon: <Layers className="h-5 w-5 text-cyan-600" />,
+  },
+  {
+    title: "Power BI",
+    description: "Automating data extraction, transformation, and business reporting.",
+    tag: "Part-time Work",
+    icon: <BarChart3 className="h-5 w-5 text-amber-600" />,
+  },
+  {
+    title: "APIs & Integrations",
+    description: "Connecting business applications through REST APIs, webhooks, and EDI exchanges.",
+    tag: "Active",
+    icon: <Network className="h-5 w-5 text-emerald-600" />,
+  },
+];
 
 export function CurrentlyLearning() {
-  const learningCategory = skillCategories.find(
-    (category) => category.title === "Learning & Current Direction"
-  );
-  const skills = learningCategory?.skills || [];
-
   return (
     <section className="py-8 sm:py-10 border-t border-slate-200">
       <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-7 gap-4">
@@ -58,28 +68,28 @@ export function CurrentlyLearning() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
-        {skills.map((skill) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+        {focusAreas.map((area) => (
           <div
-            key={skill.name}
-            className="rounded-xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-slate-300 hover:shadow-xs transition-all flex flex-col"
+            key={area.title}
+            className="rounded-xl border border-slate-200 bg-white p-5 sm:p-6 hover:border-slate-300 hover:shadow-xs transition-all flex flex-col justify-between"
           >
-            <div className="flex items-center justify-between gap-2 mb-3">
-              <div className="p-2 rounded-lg bg-slate-50 border border-slate-200">
-                {getSkillIcon(skill.name)}
+            <div>
+              <div className="flex items-center justify-between gap-2 mb-3">
+                <div className="p-2 rounded-lg bg-slate-50 border border-slate-200">
+                  {area.icon}
+                </div>
+                <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+                  {area.tag}
+                </span>
               </div>
-              <span className="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
-                {getSkillTag(skill.name)}
-              </span>
-            </div>
-            <h3 className="text-[17px] font-semibold text-slate-900">
-              {skill.name}
-            </h3>
-            {skill.notes && (
+              <h3 className="text-[17px] font-semibold text-slate-900">
+                {area.title}
+              </h3>
               <p className="text-[14px] sm:text-[15px] text-slate-600 leading-relaxed mt-2">
-                {skill.notes}
+                {area.description}
               </p>
-            )}
+            </div>
           </div>
         ))}
       </div>

@@ -20,7 +20,7 @@ export function Hero() {
 
         {/* Introduction / Lead text */}
         <p className="mt-5 text-[18px] sm:text-[19px] text-slate-700 leading-[1.7] font-normal">
-          {siteConfig.intro}
+          {siteConfig.heroIntro}
         </p>
 
         {/* Location & Career Focus */}

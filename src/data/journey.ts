@@ -2,88 +2,86 @@ import { LearningMilestone } from "@/types";
 
 export const learningMilestones: LearningMilestone[] = [
   {
-    id: "dynamics-ax-power-platform-integrations",
-    date: "2025 – Present",
-    title: "Dynamics AX, Power BI & Enterprise Integrations (EVsoft)",
-    category: "Dynamics AX / ERP",
-    status: "In Progress",
-    description:
-      "Hands-on part-time professional work integrating Power BI, Power Automate, and Power Apps with Dynamics AX and external systems (Acubiz, Corepay, GLS, EDI).",
-    topicsCovered: [
-      "Power BI automated data extraction & reporting from Dynamics AX",
-      "Power Automate & Power Apps integrated with ERP workflows",
-      "EDI and third-party system data flows (GLS, Acubiz, Corepay)",
-      "Connecting traditional software API patterns to ERP architectures",
-    ],
-    keyTakeaway:
-      "Combining 4+ years of full-stack data modeling with ERP integrations allows bridging low-code workflows with robust enterprise backend constraints.",
-  },
-  {
-    id: "career-transition-denmark",
-    date: "Aug 2025 – Present",
-    title: "Career Transition & Denmark Re-Orientation",
+    id: "agricultural-engineering",
+    date: "2019",
+    title: "Agricultural Engineering (Hue University)",
     category: "Career Transition",
-    status: "In Progress",
+    status: "Completed",
     description:
-      "Planned transition period in Denmark dedicated to rebuilding and expanding skills into business applications, automation, and enterprise platforms while establishing a long-term career path in Denmark.",
+      "Graduated with an engineering degree from Hue University of Agriculture and Forestry, establishing analytical problem-solving and structured technical thinking.",
     topicsCovered: [
-      "Deepening Microsoft Power Platform study (Power Apps, Automate, Dataverse, Pages)",
-      "Applying AI-assisted tooling to development and code optimization",
-      "Orienting towards the Danish software and IT business ecosystem",
-      "Hands-on practical labs and integration exercises",
+      "Engineering mathematics & analytical modeling",
+      "Applied technical problem solving",
     ],
     keyTakeaway:
-      "Focusing on business-oriented systems turns technical full-stack capabilities into immediate enterprise value.",
+      "Engineering studies provided a disciplined foundation for structured problem-solving and self-directed technical learning.",
   },
   {
-    id: "filestring-fullstack-production",
-    date: "Mar 2023 – Aug 2025",
-    title: "Full-Stack Production Systems at FileString (HRM, LMS, MMS)",
+    id: "self-taught-transition",
+    date: "2022",
+    title: "Transition into Software Development",
     category: "Full-Stack & APIs",
     status: "Completed",
     description:
-      "Built enterprise web applications across Human Resource Management, Learning Management, and Machine Monitoring systems using Node.js, React, PostgreSQL, Redis, gRPC, and RabbitMQ.",
+      "Transitioned into software engineering through dedicated self-study in computer science foundations, full-stack JavaScript, and relational database systems.",
     topicsCovered: [
-      "HRM: Employee lifecycle, leave management, Slack & email integrations",
-      "LMS: Multi-tenant educational data, Google APIs, RabbitMQ async messaging",
-      "MMS: Real-time Socket communication with hardware and medical patient monitoring",
-      "Agile/Scrum 1-week and 2-week delivery cycles",
+      "Object-oriented programming, data structures, and algorithms",
+      "JavaScript runtime, asynchronous patterns & DOM",
+      "Relational database design & SQL queries",
+      "Git version control and collaborative workflows",
     ],
     keyTakeaway:
-      "Hands-on engineering across diverse business domains established deep practical intuition for component modularity, schema design, and asynchronous queuing.",
+      "Building practical projects from scratch was the most reliable way to turn theoretical concepts into working code.",
   },
   {
     id: "playgroundx-web3-fullstack",
-    date: "May 2022 – Mar 2023",
-    title: "Full-Stack & Blockchain Engineering at Playgroundx.site",
+    date: "2022 – 2023",
+    title: "Full-Stack & Blockchain Engineering (Playgroundx)",
     category: "Full-Stack & APIs",
     status: "Completed",
     description:
-      "Built backend and frontend platform features for a gaming application, integrating smart contracts and interacting with BscScan and Polygon networks.",
+      "Developed web features, backend data services, and smart contract integrations for an online gaming platform.",
     topicsCovered: [
-      "Frontend & backend components with React.js, Node.js, and SQL",
+      "Frontend & backend components with React.js and Node.js",
       "Smart contract development and deployment with Solidity",
       "Web3 wallet interactions and blockchain explorer verification",
       "AWS deployment environments",
     ],
     keyTakeaway:
-      "Gained valuable perspective on distributed ledgers, cryptographic transactions, and high-frequency backend event processing.",
+      "Decentralized platforms demanded careful transaction handling, state synchronization, and strict data validation.",
   },
   {
-    id: "self-taught-transition",
-    date: "2019 – 2022",
-    title: "Self-Taught Transition from Agricultural Engineering to Software Development",
+    id: "filestring-fullstack-production",
+    date: "2023 – 2025",
+    title: "Full-Stack Enterprise Applications (FileString)",
     category: "Full-Stack & APIs",
     status: "Completed",
     description:
-      "Following graduation in Agricultural Engineering from Hue University of Agriculture and Forestry, pursued a dedicated, self-taught path to master computer science foundations, JavaScript, web development, and database architecture.",
+      "Built multi-tenant web applications across HRM, LMS, and Machine Monitoring systems using Node.js, React, PostgreSQL, Redis, and message queues.",
     topicsCovered: [
-      "Object-oriented programming, data structures, and algorithms",
-      "Full-stack JavaScript (Node.js, Express, React.js)",
-      "Relational database design and SQL querying",
-      "Git version control and collaborative software principles",
+      "Modular backend services and relational schema design",
+      "Asynchronous messaging with RabbitMQ and Redis caching",
+      "Third-party API integrations and real-time Socket communication",
+      "Agile/Scrum delivery cycles",
     ],
     keyTakeaway:
-      "An engineering degree instilled rigorous analytical discipline, which made transitioning into full-stack software development structured and persistent.",
+      "Reliable production systems depend on clean data modeling, decoupled service boundaries, and consistent error handling.",
+  },
+  {
+    id: "dynamics-ax-power-platform-integrations",
+    date: "2025 – Present",
+    title: "Denmark Career Direction: Dynamics AX & Power Platform",
+    category: "Dynamics AX / ERP",
+    status: "In Progress",
+    description:
+      "Part-time integration work with Dynamics AX at EVsoft alongside dedicated study in Power Platform, establishing a long-term software career in Denmark.",
+    topicsCovered: [
+      "Dynamics AX data extraction and Power BI automated reporting",
+      "Power Automate and Power Apps integrated with ERP workflows",
+      "EDI and external business system interfaces (GLS, Acubiz, Corepay)",
+      "Microsoft Dataverse data modeling, security roles, and business rules",
+    ],
+    keyTakeaway:
+      "Combining full-stack software experience with ERP systems makes it easier to bridge low-code workflows with complex enterprise backend constraints.",
   },
 ];

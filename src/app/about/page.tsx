@@ -12,7 +12,6 @@ import {
   Terminal,
   GraduationCap,
   Briefcase,
-  Layers,
   MapPin,
   Calendar,
   CheckCircle2,
@@ -221,51 +220,6 @@ export default function AboutPage() {
                 )}
               </div>
             ))}
-          </section>
-
-          {/* 4. Natural Career Progression */}
-          <section className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 space-y-4 shadow-xs">
-            <div className="flex items-center gap-3">
-              <span className="p-2 rounded-lg bg-purple-50 border border-purple-200 text-purple-700">
-                <Layers className="h-5 w-5" />
-              </span>
-              <h3 className="text-xl sm:text-2xl font-bold text-slate-900">Career Story &amp; Progression</h3>
-            </div>
-            <p className="text-[15px] sm:text-[16px] text-slate-600 leading-relaxed">
-              My engineering journey followed an organic, self-driven progression:
-            </p>
-
-            <div className="space-y-2 text-[14px] sm:text-[15px] font-mono text-slate-700 pl-2">
-              <div className="flex items-center gap-2">
-                <span className="text-cyan-700 font-bold">1.</span>
-                <span>Agricultural Engineering (Hue University of Agriculture and Forestry, 2015–2019)</span>
-              </div>
-              <div className="text-slate-400 pl-4">&darr;</div>
-              <div className="flex items-center gap-2">
-                <span className="text-cyan-700 font-bold">2.</span>
-                <span>Self-Taught Software Development (Computer science foundations, JavaScript, web stack)</span>
-              </div>
-              <div className="text-slate-400 pl-4">&darr;</div>
-              <div className="flex items-center gap-2">
-                <span className="text-cyan-700 font-bold">3.</span>
-                <span>Full-Stack &amp; Blockchain Development at Playgroundx.site (Node.js, React, SQL, Solidity)</span>
-              </div>
-              <div className="text-slate-400 pl-4">&darr;</div>
-              <div className="flex items-center gap-2">
-                <span className="text-cyan-700 font-bold">4.</span>
-                <span>Full-Stack Development on Production Business Systems at FileString (HRM, LMS, MMS)</span>
-              </div>
-              <div className="text-slate-400 pl-4">&darr;</div>
-              <div className="flex items-center gap-2">
-                <span className="text-cyan-700 font-bold">5.</span>
-                <span>Career Transition &amp; Denmark Re-Orientation (Planned exploration, establishing life in Denmark)</span>
-              </div>
-              <div className="text-slate-400 pl-4">&darr;</div>
-              <div className="flex items-center gap-2">
-                <span className="text-cyan-700 font-bold">6.</span>
-                <span>Returning to Development &amp; Part-Time Integration Work at EVsoft (Dynamics AX, Power Platform, APIs)</span>
-              </div>
-            </div>
           </section>
         </div>
 
