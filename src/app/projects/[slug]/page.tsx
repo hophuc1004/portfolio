@@ -20,6 +20,9 @@ interface ProjectDetailPageProps {
 }
 
 export async function generateStaticParams() {
+  if (projects.length === 0) {
+    return [{ slug: "_placeholder" }];
+  }
   return projects.map((project) => ({
     slug: project.slug,
   }));
