@@ -11,15 +11,16 @@ export const siteConfig = {
   intro:
     "Software Developer with 4+ years of experience in full-stack web development, working mainly with JavaScript, Node.js, React, PostgreSQL and related backend technologies. I am currently expanding my experience into Dynamics AX, Power Platform, automation and business applications, with an interest in combining software development skills with practical business processes and enterprise systems. My background is mainly in hands-on development, working on HR, LMS, machine management and blockchain-related projects. I am now focusing on building a longer-term career in Denmark while continuing to strengthen my technical and business-system knowledge.",
   location: "Denmark",
-  email: "contact@example.com", // Placeholder
-  githubUrl: "https://github.com/example", // Placeholder
-  linkedinUrl: "https://linkedin.com/in/example", // Placeholder
+  email: "hophuc1004@gmail.com", // Placeholder
+  githubUrl: "https://github.com/hophuc1004", // Placeholder
+  linkedinUrl: "https://www.linkedin.com/in/hophuc97/", // Placeholder
 
   // External blog URL configured in one place
-  blogUrl: "PASTE_MY_BLOG_URL_HERE",
+  blogUrl: "https://blog.phuchanhtrinh.work/",
 
   // Active status tag shown in the navigation bar & hero
-  statusBadge: "Full-Stack Dev • Expanding into Dynamics AX & Power Platform • Denmark",
+  statusBadge:
+    "Full-Stack Dev • Expanding into Dynamics AX & Power Platform • Denmark",
 };
 
 /**

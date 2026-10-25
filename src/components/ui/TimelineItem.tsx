@@ -5,9 +5,14 @@ import { CheckCircle2, Clock, Sparkles } from "lucide-react";
 interface TimelineItemProps {
   milestone: LearningMilestone;
   isLast?: boolean;
+  showDetails?: boolean;
 }
 
-export function TimelineItem({ milestone, isLast = false }: TimelineItemProps) {
+export function TimelineItem({
+  milestone,
+  isLast = false,
+  showDetails = milestone.status === "In Progress",
+}: TimelineItemProps) {
   const getStatusIcon = () => {
     switch (milestone.status) {
       case "Completed":
@@ -72,7 +77,7 @@ export function TimelineItem({ milestone, isLast = false }: TimelineItemProps) {
         </p>
 
         {/* Topics list */}
-        {milestone.topicsCovered && milestone.topicsCovered.length > 0 && (
+        {showDetails && milestone.topicsCovered && milestone.topicsCovered.length > 0 && (
           <div className="mt-3.5 pt-3 border-t border-slate-100">
             <div className="text-xs font-mono text-slate-500 mb-1.5 font-medium">
               Key topics & practices:
@@ -89,7 +94,7 @@ export function TimelineItem({ milestone, isLast = false }: TimelineItemProps) {
         )}
 
         {/* Key Takeaway / Honest reflection */}
-        {milestone.keyTakeaway && (
+        {showDetails && milestone.keyTakeaway && (
           <div className="mt-3.5 rounded-lg bg-slate-50 border border-slate-200 p-3 text-[14px] text-slate-700 leading-relaxed">
             <span className="font-mono text-cyan-800 font-semibold mr-1.5">
               Takeaway:

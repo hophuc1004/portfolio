@@ -4,11 +4,11 @@ export const learningMilestones: LearningMilestone[] = [
   {
     id: "agricultural-engineering",
     date: "2019",
-    title: "Agricultural Engineering (Hue University)",
+    title: "Agricultural Engineering",
     category: "Career Transition",
     status: "Completed",
     description:
-      "Graduated with an engineering degree from Hue University of Agriculture and Forestry, establishing analytical problem-solving and structured technical thinking.",
+      "Graduated from Hue University of Agriculture and Forestry, building a foundation in engineering and structured problem-solving.",
     topicsCovered: [
       "Engineering mathematics & analytical modeling",
       "Applied technical problem solving",
@@ -23,7 +23,7 @@ export const learningMilestones: LearningMilestone[] = [
     category: "Full-Stack & APIs",
     status: "Completed",
     description:
-      "Transitioned into software engineering through dedicated self-study in computer science foundations, full-stack JavaScript, and relational database systems.",
+      "Started a self-taught transition into software development, focusing on programming fundamentals, JavaScript, backend development, and databases.",
     topicsCovered: [
       "Object-oriented programming, data structures, and algorithms",
       "JavaScript runtime, asynchronous patterns & DOM",
@@ -36,11 +36,11 @@ export const learningMilestones: LearningMilestone[] = [
   {
     id: "playgroundx-web3-fullstack",
     date: "2022 – 2023",
-    title: "Full-Stack & Blockchain Engineering (Playgroundx)",
+    title: "Full-stack & Blockchain Development",
     category: "Full-Stack & APIs",
     status: "Completed",
     description:
-      "Developed web features, backend data services, and smart contract integrations for an online gaming platform.",
+      "Built practical full-stack applications while gaining professional experience with blockchain-related development.",
     topicsCovered: [
       "Frontend & backend components with React.js and Node.js",
       "Smart contract development and deployment with Solidity",
@@ -53,11 +53,11 @@ export const learningMilestones: LearningMilestone[] = [
   {
     id: "filestring-fullstack-production",
     date: "2023 – 2025",
-    title: "Full-Stack Enterprise Applications (FileString)",
+    title: "Full-stack Development",
     category: "Full-Stack & APIs",
     status: "Completed",
     description:
-      "Built multi-tenant web applications across HRM, LMS, and Machine Monitoring systems using Node.js, React, PostgreSQL, Redis, and message queues.",
+      "Worked on production applications across HRM, LMS, and medical management systems using modern full-stack technologies.",
     topicsCovered: [
       "Modular backend services and relational schema design",
       "Asynchronous messaging with RabbitMQ and Redis caching",
@@ -70,18 +70,18 @@ export const learningMilestones: LearningMilestone[] = [
   {
     id: "dynamics-ax-power-platform-integrations",
     date: "2025 – Present",
-    title: "Denmark Career Direction: Dynamics AX & Power Platform",
+    title: "Denmark & AX / Power Platform",
     category: "Dynamics AX / ERP",
     status: "In Progress",
     description:
-      "Part-time integration work with Dynamics AX at EVsoft alongside dedicated study in Power Platform, establishing a long-term software career in Denmark.",
+      "Continued software development in Denmark while gaining practical experience with Dynamics AX, Power Platform, Power BI, and business integrations.",
     topicsCovered: [
-      "Dynamics AX data extraction and Power BI automated reporting",
-      "Power Automate and Power Apps integrated with ERP workflows",
-      "EDI and external business system interfaces (GLS, Acubiz, Corepay)",
-      "Microsoft Dataverse data modeling, security roles, and business rules",
+      "Dynamics AX / D365 data integration & automated reporting",
+      "Power Platform (Power Apps, Power Automate, Dataverse)",
+      "Power BI reporting & data extraction from ERP",
+      "APIs, EDI & external business application integrations",
     ],
     keyTakeaway:
-      "Combining full-stack software experience with ERP systems makes it easier to bridge low-code workflows with complex enterprise backend constraints.",
+      "Full-stack development experience helps bridge low-code tools and enterprise ERP backend constraints into practical business workflows.",
   },
 ];

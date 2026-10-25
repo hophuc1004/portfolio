@@ -4,12 +4,12 @@ import { SectionHeader } from "@/components/ui/SectionHeader";
 import { TimelineItem } from "@/components/ui/TimelineItem";
 import { learningMilestones } from "@/data/journey";
 import { siteConfig, getBlogUrl } from "@/data/siteConfig";
-import { ExternalLink, BookOpen, Compass, Lightbulb } from "lucide-react";
+import { ExternalLink, BookOpen, Compass } from "lucide-react";
 
 export const metadata = {
-  title: `Career Journey & Learning Log | ${siteConfig.name}`,
+  title: `Career & Learning Journey | ${siteConfig.name}`,
   description:
-    "A transparent chronological log of my development path: from agricultural engineering to 4+ years full-stack, career transition in Denmark, and expanding into Dynamics AX & Power Platform.",
+    "A chronological view of my transition from engineering into software development, full-stack work, and my current direction toward Dynamics AX, Power Platform, and business applications.",
 };
 
 export default function JourneyPage() {
@@ -17,25 +17,9 @@ export default function JourneyPage() {
     <Container className="py-8 sm:py-12">
       <SectionHeader
         badge="Career & Learning Log"
-        title="Journey & Technical Roadmap"
-        description="A chronological record documenting my natural career path: foundational self-taught development, production systems at FileString, blockchain engineering, career transition in Denmark, and ongoing integration work with Dynamics AX and Power Platform."
+        title="Career & Learning Journey"
+        description="A chronological view of my transition from engineering into software development, full-stack work, and my current direction toward Dynamics AX, Power Platform, and business applications."
       />
-
-      {/* Intro banner */}
-      <div className="rounded-xl border border-cyan-200 bg-cyan-50/70 p-5 sm:p-6 mb-8 sm:mb-10 flex flex-col sm:flex-row items-start gap-4">
-        <div className="p-2 rounded-lg bg-cyan-100 text-cyan-700 shrink-0">
-          <Lightbulb className="h-5 w-5" />
-        </div>
-        <div className="text-[15px] sm:text-[16px] text-slate-700 leading-relaxed space-y-1">
-          <p className="font-semibold text-slate-900">
-            Career Story &amp; Growth Mindset:
-          </p>
-          <p>
-            My transition from an engineering degree into full-stack development and subsequently into enterprise business systems reflects a continuous commitment to learning.
-            By recording milestones, architectures, and lessons learned, I keep my progression transparent and grounded in real-world application.
-          </p>
-        </div>
-      </div>
 
       {/* Main Timeline */}
       <div className="max-w-3xl mx-auto">
@@ -61,7 +45,7 @@ export default function JourneyPage() {
           <li className="flex items-start gap-2">
             <span className="text-cyan-600 font-mono mt-0.5">&bull;</span>
             <span>
-              <strong className="text-slate-900">Deepen Dynamics AX &amp; D365 Integrations:</strong> Expanding data flow pipelines, custom service endpoints, and connecting external business solutions.
+              <strong className="text-slate-900">ERP &amp; Dynamics AX Integrations:</strong> Expanding data flow pipelines, service endpoints, and connecting external business solutions.
             </span>
           </li>
           <li className="flex items-start gap-2">
@@ -73,7 +57,7 @@ export default function JourneyPage() {
           <li className="flex items-start gap-2">
             <span className="text-cyan-600 font-mono mt-0.5">&bull;</span>
             <span>
-              <strong className="text-slate-900">Application Lifecycle Management (ALM):</strong> Exploring automated solution packing, version control, and CI/CD for low-code and ERP extensions.
+              <strong className="text-slate-900">Application Lifecycle Management (ALM):</strong> Solution packing, environment strategies, and version control for business applications.
             </span>
           </li>
         </ul>
